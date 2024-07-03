@@ -1,0 +1,34 @@
+.main-container {
+  .container {
+    padding: 25px 0;
+    .row {
+      .col-8 {
+        border: 2px solid black;
+      }
+      .col-4 {
+        .search-category-tag {
+          margin-left: 10px;
+          .search {
+            background-color: var(--main_bg);
+            padding: 10px 15px;
+            text-align: center;
+            box-shadow: var(--shadow_color);
+            h1 {
+              text-transform: uppercase;
+              margin-bottom: 10px;
+            }
+            .form-group {
+              .search-btn {
+                margin-top: 10px;
+                background-color: #4ad840;
+                &:hover {
+                  background-color: #2ed223;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
