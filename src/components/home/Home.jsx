@@ -1,4 +1,4 @@
-import ArticleSide from "./ArticleSide";
+import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
 
 export default function Home() {
@@ -7,9 +7,9 @@ export default function Home() {
       <div className="container">
         <div className="row">
           <div className="col-8">
-            <ArticleSide />
+            <Outlet />
           </div>
-          <div className="col-4">
+          <div className="col-4 sidebar">
             <Sidebar />
           </div>
         </div>
