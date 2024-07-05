@@ -1,7 +1,39 @@
 .main-container {
   .container {
     padding: 25px 0;
-    .row {
+    .row.home {
+      @media only screen and (max-width: 991px) {
+        flex-direction: column;
+        .col-8 {
+          width: 100%;
+        }
+        .col-4.sidebar {
+          width: 100%;
+          .search-category-tag {
+            margin-left: 0px !important;
+            //padding: 0 5px;
+          }
+        }
+      }
+      @media only screen and (max-width: 420px) {
+        .col-8 {
+          .articalSide {
+            .row.singleArtical {
+              flex-direction: column;
+              .col-4 {
+                width: 100%;
+                .blogImage {
+                  width: 100%;
+                }
+              }
+              .col-8 {
+                padding-left: 0 !important;
+                grid-gap: 10px;
+              }
+            }
+          }
+        }
+      }
       .col-8 {
         .articalSide {
           .row.singleArtical {

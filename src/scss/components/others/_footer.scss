@@ -1,0 +1,46 @@
+.footer {
+  background-color: #494949;
+  .container {
+    .row {
+      flex-direction: column;
+      padding: 20px 0;
+
+      .col-6.links {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        a.linkItem {
+          color: white;
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+      .col-6.copyRights {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+        .crTitle {
+          font-size: 10px;
+          color: white;
+        }
+      }
+
+      // tab view
+      @media only screen and (min-width: 421px) {
+        flex-direction: row;
+        align-items: center;
+        .col-6.links {
+          justify-content: flex-start;
+          grid-gap: 15px;
+        }
+        .col-6.copyRights {
+          margin-top: 0;
+          text-align: end;
+          .crTitle {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

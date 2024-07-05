@@ -7,7 +7,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "/logo.svg";
+import logo from "/logo.png";
 
 export default function Navbar() {
   return (

@@ -1,0 +1,25 @@
+.errorDiv {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: var(--text_colour);
+  .errorCode {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .errorTitle {
+    font-size: 30px;
+    font-weight: 900;
+  }
+  @media only screen and (min-width: 421px) {
+    .errorCode {
+      font-size: 60px;
+    }
+    .errorTitle {
+      font-size: 50px;
+    }
+  }
+}

@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="main-container">
       <div className="container">
-        <div className="row">
+        <div className="row home">
           <div className="col-8">
             <Outlet />
           </div>
