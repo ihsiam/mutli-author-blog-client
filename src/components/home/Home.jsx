@@ -6,7 +6,7 @@ export default function Home() {
     <div className="main-container">
       <div className="container">
         <div className="row home">
-          <div className="col-8">
+          <div className="col-8 articalBar">
             <Outlet />
           </div>
           <div className="col-4 sidebar">

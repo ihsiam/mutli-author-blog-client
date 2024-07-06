@@ -1,50 +1,24 @@
 .main-container {
+  padding: 20px 0;
   .container {
-    padding: 25px 0;
     .row.home {
-      @media only screen and (max-width: 991px) {
-        flex-direction: column;
-        .col-8 {
-          width: 100%;
-        }
-        .col-4.sidebar {
-          width: 100%;
-          .search-category-tag {
-            margin-left: 0px !important;
-            //padding: 0 5px;
-          }
-        }
-      }
-      @media only screen and (max-width: 420px) {
-        .col-8 {
-          .articalSide {
-            .row.singleArtical {
-              flex-direction: column;
-              .col-4 {
-                width: 100%;
-                .blogImage {
-                  width: 100%;
-                }
-              }
-              .col-8 {
-                padding-left: 0 !important;
-                grid-gap: 10px;
-              }
-            }
-          }
-        }
-      }
-      .col-8 {
+      flex-direction: column;
+      grid-gap: 10px;
+      .col-8.articalBar {
+        width: 100%;
         .articalSide {
           .row.singleArtical {
             background-color: var(--main_bg);
             box-shadow: var(--shadow_color);
-            padding: 15px 20px;
+            padding: 15px 10px;
             border-radius: 5px;
-            margin-bottom: 15px;
+            flex-direction: column;
+            grid-gap: 10px;
+            margin-bottom: 10px;
             .col-4 {
+              width: 100%;
               .blogImage {
-                height: 200px;
+                height: 150px;
                 width: 100%;
                 position: relative;
                 img {
@@ -64,42 +38,43 @@
               }
             }
             .col-8 {
+              width: 100%;
               display: flex;
               flex-direction: column;
               justify-content: space-between;
-              padding-left: 20px;
-              .blogTitle {
-                a {
+              grid-gap: 10px;
+              a {
+                .blogTitle {
                   font-size: 18px;
-                  font-weight: 700;
+                  font-weight: 600;
                   color: var(--text_colour);
                 }
               }
               .auth-time {
                 display: flex;
                 align-items: center;
-                grid-gap: 10px;
+                grid-gap: 12px;
                 .auth {
                   text-transform: uppercase;
-                  font-size: 14px;
-                  font-weight: 600;
+                  font-size: 12px;
+                  font-weight: 700;
                   color: black;
                 }
                 .time {
                   text-transform: uppercase;
-                  font-size: 12px;
-                  font-weight: 600;
+                  font-size: 10px;
+                  font-weight: 700;
                   color: gray;
                 }
               }
               .des {
-                font-size: 14px;
+                font-size: 15px;
               }
-              .readMore {
-                background-color: #ff5722;
-                border-radius: 2px;
-                width: fit-content;
-                a {
+              a {
+                .readMore {
+                  background-color: #ff5722;
+                  border-radius: 2px;
+                  width: fit-content;
                   color: white;
                 }
               }
@@ -108,8 +83,11 @@
         }
       }
       .col-4.sidebar {
+        width: 100%;
         .search-category-tag {
-          margin-left: 10px;
+          display: flex;
+          flex-direction: column;
+          grid-gap: 10px;
           .search {
             border-radius: 5px;
             background-color: var(--main_bg);
@@ -132,7 +110,6 @@
             }
           }
           .popular-artical {
-            margin-top: 20px;
             background-color: var(--main_bg);
             box-shadow: var(--shadow_color);
             .headerTitle {
@@ -175,7 +152,6 @@
             }
           }
           .category {
-            margin-top: 20px;
             background-color: var(--main_bg);
             box-shadow: var(--shadow_color);
             .ctgTitle {
@@ -205,7 +181,6 @@
             }
           }
           .tag {
-            margin-top: 20px;
             background-color: var(--main_bg);
             box-shadow: var(--shadow_color);
             .tagTitle {
@@ -231,6 +206,51 @@
               }
             }
           }
+        }
+      }
+
+      // tab view
+      @media only screen and (min-width: 501px) {
+        .col-8.articalBar {
+          .articalSide {
+            .row.singleArtical {
+              flex-direction: row;
+              .col-4 {
+                width: auto;
+              }
+              .col-8 {
+                grid-gap: 5px;
+                .des {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // pc view
+      @media only screen and (min-width: 991px) {
+        flex-direction: row;
+        .col-8.articalBar {
+          .articalSide {
+            .row.singleArtical {
+              grid-gap: 20px;
+              flex-direction: row;
+              .col-4 {
+                width: auto;
+              }
+              .col-8 {
+                grid-gap: 5px;
+                .des {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+        .col-4.sidebar {
+          width: auto;
         }
       }
     }

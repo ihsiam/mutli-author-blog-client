@@ -20,6 +20,17 @@
   text-transform: uppercase;
   font-weight: 400;
   transition: all 0.3s;
-  padding: 10px 15px;
+  padding: 6px 10px;
   border: none;
+  cursor: pointer;
+
+  // tab
+  @media only screen and (min-width: 501px) {
+    padding: 8px 12px;
+  }
+
+  // pc
+  @media only screen and (min-width: 991px) {
+    padding: 10px 15px;
+  }
 }

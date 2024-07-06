@@ -9,17 +9,12 @@ export default function PopularArtical() {
     },
     {
       img: demo,
-      title: "Artical 2",
+      title: "Artical 1",
       time: 2,
     },
     {
       img: demo,
-      title: "Artical 3",
-      time: 2,
-    },
-    {
-      img: demo,
-      title: "Artical 4",
+      title: "Artical 1",
       time: 2,
     },
   ];

@@ -3,39 +3,51 @@
   .container {
     .row {
       flex-direction: column;
-      padding: 20px 0;
-
+      padding: 15px 0;
+      grid-gap: 15px;
       .col-6.links {
         width: 100%;
         display: flex;
         justify-content: space-between;
         a.linkItem {
+          text-transform: uppercase;
           color: white;
-          font-size: 15px;
+          font-size: 12px;
           font-weight: 400;
         }
       }
       .col-6.copyRights {
-        margin-top: 10px;
         width: 100%;
         text-align: center;
         .crTitle {
           font-size: 10px;
           color: white;
+          font-weight: 400;
         }
       }
 
       // tab view
-      @media only screen and (min-width: 421px) {
+      @media only screen and (min-width: 501px) {
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
         .col-6.links {
+          width: auto;
           justify-content: flex-start;
-          grid-gap: 15px;
+          grid-gap: 8px;
         }
         .col-6.copyRights {
-          margin-top: 0;
+          width: auto;
           text-align: end;
+        }
+      }
+
+      // pc view
+      @media only screen and (min-width: 991px) {
+        .col-6.links {
+          grid-gap: 50px;
+        }
+        .col-6.copyRights {
           .crTitle {
             font-size: 15px;
           }
