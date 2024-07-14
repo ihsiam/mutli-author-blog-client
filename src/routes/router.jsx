@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
+import Register from "../components/auth/Register";
 import ArticalDetails from "../components/home/ArticalDetails";
 import ArticalSide from "../components/home/ArticalSide";
 import CtgArticals from "../components/home/CtgArticals";
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/policy",
         element: <PolicyPage />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
       },
     ],
   },

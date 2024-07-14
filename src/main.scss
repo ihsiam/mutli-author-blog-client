@@ -1,8 +1,9 @@
-@import "../src/scss/base/reset";
-@import "../src/scss/layout/grid";
-@import "../src/scss/app";
-@import "../src/scss/components/home/navbar";
-@import "../src/scss/components/home/home.scss";
-@import "../src/scss/common.scss";
-@import "../src/scss/components/others/erropage";
-@import "../src/scss/components/others/footer";
+@import "./scss/base/reset";
+@import "./scss/layout/grid";
+@import "./scss/app";
+@import "./scss/components/home/navbar";
+@import "./scss/components/home/home.scss";
+@import "./scss/common.scss";
+@import "./scss/components/others/erropage";
+@import "./scss/components/others/footer";
+@import "./scss/components/auth/register.scss";

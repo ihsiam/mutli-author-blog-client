@@ -1,0 +1,42 @@
+.container.regPage {
+  display: flex;
+  .register {
+    margin: 10px auto;
+    padding: 0px 10px;
+    border-radius: 5px;
+    background-color: var(--main_bg);
+    box-shadow: var(--shadow_color);
+    .reg-title {
+      text-align: center;
+      padding-top: 20px;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+    .reg-form {
+      padding: 10px 5px;
+      display: flex;
+      flex-direction: column;
+      grid-gap: 10px;
+      .form-item {
+        input::file-selector-button {
+          display: none;
+        }
+      }
+      .reg-btn {
+        background-color: #ec4d6d;
+        margin: 0 auto;
+        color: white;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+// tab
+@media only screen and (min-width: 501px) {
+  .container.regPage {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+}
